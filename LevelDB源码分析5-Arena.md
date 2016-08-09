@@ -1,3 +1,5 @@
+Arena为leveldb的内存管理单元，避免频繁的new/delete,减少内存申请和释放带来的开销。
+
 
 成员变量：
 其中的blocks_是一个char*的vector,这个vector中每个元素都是指向一块内存(大小为4096，4K)
